@@ -2,19 +2,26 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
   setup do
-    @product = products(:one)
+    @product = products(:ruby)
     @update = {
       title:       'lorem Ipsum',
       description: 'Wibbles are fun!',
       image_url:   'lorem.jpg',
       price:       19.95
     }
+    p @product
   end
 
   test "should get index" do
     get :index
     assert_response :success
     assert_not_nil assigns(:products)
+
+    assert_select "#side a", minimum: 4
+    assert_select "tr td", 9
+    assert_select "dt", "MyString"
+    assert_select ".list_line_odd", 2
+    assert_select ".list_actions", 3
   end
 
   test "should get new" do
