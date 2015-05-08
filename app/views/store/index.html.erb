@@ -2,6 +2,8 @@
   <p id="notice"><%= notice %></p>
 <% end %>
 
+<h3><%= @message %></h3>
+
 <h1>Pragmatic Catalog</h1>
 
 <% cache ['store', Product.latest] do %>

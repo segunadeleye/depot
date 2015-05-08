@@ -10,4 +10,9 @@ class Cart < ActiveRecord::Base
       current_item = line_items.build(product_id: product_id)
     end
   end
+
+  def total_price
+    line_items.inject(0) { |total_price, item| total_price + item.total_price }
+    # line_items.to_a.sum { |item| item.total_price }
+  end
 end
