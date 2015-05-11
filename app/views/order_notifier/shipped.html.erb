@@ -1,0 +1,13 @@
+<h3>O'Trendy Order Shipped</h3>
+
+<p>This is to notify you that we have shipped your recent order</p>
+
+<table>
+  <tr>
+    <th colspan="2">Quantity</th>
+    <th>Description</th>
+  </tr>
+  <%= render @order.line_items %>
+</table>
+
+<p>Thanks for your patronage</p>

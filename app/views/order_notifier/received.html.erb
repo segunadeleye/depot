@@ -1,0 +1,19 @@
+<h3>Dear <%= @order.name %></h3>
+
+<p>Thank you for your recent order from O'Trendy Store.</p>
+
+<p>You ordered the following items</p>
+
+<table>
+  <tr>
+    <th colspan="2">Quantity</th>
+    <th>Description</th>
+  </tr>
+  <%= render @order.line_items %>
+</table>
+
+<p>We will notify you once your order ships.</p>
+
+<p>All we need is your patience.</p>
+
+<p>Do we have your cooperation? Of course you have no other option. We know say you too like <strong>AWOOF!!!</strong></p>
