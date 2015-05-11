@@ -1,4 +1,5 @@
-$("#cart:hidden").fadeIn();
+$("#notice").hide();
+$("#cart:hidden").fadeIn(5000);
 $("#cart").html("<%= escape_javascript render @cart %>");
 $('#current_item').css({'background-color':'#88ff88'}).
-animate({'background-color':'#fff'}, 1000);
+animate({'background-color':'#114411'}, 1000);

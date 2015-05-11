@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
   has_many :line_items
+  has_many :orders, through: :line_items
   before_destroy :ensure_not_referenced_by_any_line_item
 
   private
@@ -25,6 +26,7 @@ class Product < ActiveRecord::Base
   }
   validates :title, length: { minimum: 10 }
 
+  # Get's the most recently updated product which will be the only product updated on the view [store/index.html.erb]
   def self.latest
     Product.order(:updated_at).last
   end
