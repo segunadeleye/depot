@@ -1,6 +1,7 @@
 class StoreController < ApplicationController
   include CurrentCart
   before_action :set_cart
+  skip_before_action :authorize
   def index
     @products = Product.order(:title)
     @counter = count_number_of_visit_to_store_page
