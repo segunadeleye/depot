@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
         if I18n.available_locales.include?(params[:locale].to_sym)
           I18n.locale = params[:locale]
         else
-          flash[:notice] = "#{params[:locale]} tranlation not available"
+          flash[:notice] = "#{params[:locale]} translation not available"
           logger.error flash[:notice]
         end
       end

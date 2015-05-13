@@ -1,5 +1,7 @@
 es:
 
+  hello: "Hola Mundo"
+
   thanks: "Gracias por su pedido."
 
   layouts:
