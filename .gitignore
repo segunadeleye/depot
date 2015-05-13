@@ -12,7 +12,7 @@
 /db/*.sqlite3-journal
 
 # Ignore the database back up yml file
-/db/data.yml
+# /db/data.yml
 
 # Ignore all logfiles and tempfiles.
 /log/*
