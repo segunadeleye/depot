@@ -1,0 +1,353 @@
+
+---
+products:
+  columns:
+  - id
+  - title
+  - description
+  - image_url
+  - price
+  - created_at
+  - updated_at
+  records: 
+  - - 8
+    - CoffeeScript 1 ed.
+    - "<p>\r\n        CoffeeScript is JavaScript done right. It provides all of JavaScript's\r\n
+      \ functionality wrapped in a cleaner, more succinct syntax. In the first\r\n
+      \ book on this exciting new language, CoffeeScript guru Trevor Burnham\r\n  shows
+      you how to hold onto all the power and flexibility of JavaScript\r\n  while
+      writing clearer, cleaner, and safer code.\r\n      </p>"
+    - cs.jpg
+    - 36
+    - '2015-05-05 13:45:13.681536'
+    - '2015-05-12 16:28:21.926479'
+  - - 9
+    - Programming Ruby 1.9 & 2.0 - 40th Ed.
+    - "<p>\r\n        Ruby is the fastest growing and most exciting dynamic language\r\n
+      \       out there. If you need to get working programs delivered fast,\r\n        you
+      should add Ruby to your toolbox.\r\n      </p>"
+    - ruby.jpg
+    - 49.95
+    - '2015-05-05 13:45:13.829182'
+    - '2015-05-06 09:08:04.334992'
+  - - 10
+    - Rails Test Prescriptions Updated
+    - "<p>\r\n        <em>Rails Test Prescriptions</em> is a comprehensive guide to
+      testing\r\n        Rails applications, covering Test-Driven Development from
+      both a\r\n        theoretical perspective (why to test) and from a practical
+      perspective\r\n        (how to test effectively). It covers the core Rails testing
+      tools and\r\n        procedures for Rails 2 and Rails 3, and introduces popular
+      add-ons,\r\n        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.\r\n
+      \     </p>"
+    - rtp.jpg
+    - 34.95
+    - '2015-05-05 13:45:13.985738'
+    - '2015-05-06 08:45:32.814885'
+
+---
+carts:
+  columns:
+  - id
+  - created_at
+  - updated_at
+  records: 
+  - - 61
+    - '2015-05-12 11:46:30.623806'
+    - '2015-05-12 11:46:30.623806'
+
+---
+line_items:
+  columns:
+  - id
+  - product_id
+  - cart_id
+  - created_at
+  - updated_at
+  - quantity
+  - price
+  - order_id
+  records: 
+  - - 104
+    - 10
+    - 
+    - '2015-05-09 17:38:02.499127'
+    - '2015-05-11 08:45:47.833645'
+    - 3
+    - 34.95
+    - 1
+  - - 105
+    - 8
+    - 
+    - '2015-05-09 17:38:08.331066'
+    - '2015-05-11 08:45:47.849232'
+    - 2
+    - 36
+    - 1
+  - - 106
+    - 9
+    - 
+    - '2015-05-11 08:31:56.461686'
+    - '2015-05-11 08:45:47.871887'
+    - 1
+    - 49.95
+    - 1
+  - - 109
+    - 9
+    - 
+    - '2015-05-11 10:15:15.843972'
+    - '2015-05-11 10:15:53.180052'
+    - 3
+    - 49.95
+    - 2
+  - - 110
+    - 8
+    - 
+    - '2015-05-11 10:58:31.479059'
+    - '2015-05-11 10:59:39.925393'
+    - 2
+    - 36
+    - 3
+  - - 111
+    - 10
+    - 
+    - '2015-05-11 10:59:11.869678'
+    - '2015-05-11 10:59:39.928655'
+    - 1
+    - 34.95
+    - 3
+  - - 112
+    - 9
+    - 
+    - '2015-05-11 11:00:08.534117'
+    - '2015-05-11 11:01:22.179305'
+    - 1
+    - 49.95
+    - 4
+  - - 113
+    - 10
+    - 
+    - '2015-05-11 11:00:11.273253'
+    - '2015-05-11 11:01:22.181231'
+    - 1
+    - 34.95
+    - 4
+  - - 114
+    - 8
+    - 
+    - '2015-05-11 11:00:12.584304'
+    - '2015-05-11 11:01:22.182736'
+    - 1
+    - 36
+    - 4
+  - - 115
+    - 9
+    - 
+    - '2015-05-11 11:08:55.772261'
+    - '2015-05-11 11:10:10.524132'
+    - 1
+    - 49.95
+    - 5
+  - - 116
+    - 8
+    - 
+    - '2015-05-11 11:08:57.384382'
+    - '2015-05-11 11:10:10.525937'
+    - 1
+    - 36
+    - 5
+  - - 122
+    - 10
+    - 
+    - '2015-05-11 15:46:01.783318'
+    - '2015-05-11 15:47:05.350865'
+    - 2
+    - 34.95
+    - 6
+  - - 123
+    - 8
+    - 
+    - '2015-05-11 15:46:05.026727'
+    - '2015-05-11 15:47:05.353157'
+    - 1
+    - 36
+    - 6
+  - - 124
+    - 9
+    - 
+    - '2015-05-11 15:46:06.956142'
+    - '2015-05-11 15:47:05.362164'
+    - 2
+    - 49.95
+    - 6
+  - - 125
+    - 8
+    - 
+    - '2015-05-11 15:52:04.351203'
+    - '2015-05-11 15:53:05.334624'
+    - 7
+    - 36
+    - 7
+  - - 126
+    - 10
+    - 
+    - '2015-05-11 15:52:07.978572'
+    - '2015-05-11 15:53:05.337104'
+    - 6
+    - 34.95
+    - 7
+  - - 127
+    - 9
+    - 
+    - '2015-05-11 15:52:09.752060'
+    - '2015-05-11 15:53:05.339158'
+    - 3
+    - 49.95
+    - 7
+  - - 128
+    - 9
+    - 
+    - '2015-05-11 16:07:25.426028'
+    - '2015-05-11 16:07:50.473335'
+    - 1
+    - 49.95
+    - 8
+  - - 129
+    - 10
+    - 
+    - '2015-05-11 16:07:27.264004'
+    - '2015-05-11 16:07:50.475672'
+    - 1
+    - 34.95
+    - 8
+  - - 130
+    - 8
+    - 
+    - '2015-05-11 16:07:29.021248'
+    - '2015-05-11 16:07:50.477289'
+    - 1
+    - 36
+    - 8
+  - - 131
+    - 10
+    - 
+    - '2015-05-11 16:19:12.967410'
+    - '2015-05-11 16:19:54.718541'
+    - 1
+    - 34.95
+    - 9
+  - - 132
+    - 9
+    - 
+    - '2015-05-11 16:19:15.024229'
+    - '2015-05-11 16:19:54.720212'
+    - 3
+    - 49.95
+    - 9
+  - - 136
+    - 9
+    - 61
+    - '2015-05-12 16:18:55.164004'
+    - '2015-05-12 16:18:55.164004'
+    - 1
+    - 49.95
+    - 
+
+---
+orders:
+  columns:
+  - id
+  - name
+  - address
+  - email
+  - pay_type
+  - created_at
+  - updated_at
+  - ship_date
+  records: 
+  - - 1
+    - Oluwaegun Adeleye
+    - My Home Address
+    - oluwasegun@dealdey.com
+    - Credit card
+    - '2015-05-11 08:45:47.831907'
+    - '2015-05-11 08:45:47.831907'
+    - 
+  - - 2
+    - Omobolanle Edun
+    - Our Home Address
+    - edunola09@yahoo.com
+    - Pay on delivery
+    - '2015-05-11 10:15:53.177777'
+    - '2015-05-11 10:15:53.177777'
+    - 
+  - - 3
+    - Foluke Adeleye
+    - Her Home Address
+    - fovic92@yahoo.com
+    - Cheque
+    - '2015-05-11 10:59:39.923461'
+    - '2015-05-11 10:59:39.923461'
+    - 
+  - - 4
+    - Moronke Adeleye
+    - Her School Address
+    - moronke.adeleye@gmail.com
+    - Purchase order
+    - '2015-05-11 11:01:22.176837'
+    - '2015-05-11 11:01:22.176837'
+    - 
+  - - 5
+    - Kunle Mumuni
+    - His Home Address
+    - kunle.mumuni@dealdey.com
+    - Credit card
+    - '2015-05-11 11:10:10.522681'
+    - '2015-05-11 11:10:10.522681'
+    - 
+  - - 6
+    - Adeleye Oluwasegun
+    - The Same Old Address
+    - oluwasegun@dealdey.com
+    - Credit card
+    - '2015-05-11 15:47:05.348005'
+    - '2015-05-11 15:47:05.348005'
+    - 
+  - - 7
+    - Oluwasegun Adeleye
+    - Same as the first
+    - oluwasegun@dealdey.com
+    - Cheque
+    - '2015-05-11 15:53:05.331768'
+    - '2015-05-11 15:53:05.331768'
+    - 
+  - - 8
+    - Oluwasegun
+    - Address
+    - oluwasegun@dealdey.com
+    - Credit card
+    - '2015-05-11 16:07:50.471703'
+    - '2015-05-11 18:13:43.476550'
+    - '2015-05-12 00:00:00.000000'
+  - - 9
+    - Olamidayo
+    - My Address
+    - edunola09@yahoo.com
+    - Pay on delivery
+    - '2015-05-11 16:19:54.716671'
+    - '2015-05-11 16:19:54.716671'
+    - 
+
+---
+users:
+  columns:
+  - id
+  - name
+  - password_digest
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Oluwasegun
+    - "$2a$10$p3qm/03BBJrRpPXBiP4JaumN5AyV.I8mOQH5cs6vCV0wPHBc/VXBq"
+    - '2015-05-11 22:36:49.043746'
+    - '2015-05-12 11:41:39.937291'
